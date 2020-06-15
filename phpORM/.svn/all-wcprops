@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ncdc/sigedu/svn/!svn/ver/5/trunk/phpORM
+END
+ORMCollection.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ncdc/sigedu/svn/!svn/ver/9/trunk/phpORM/ORMCollection.php
+END
+generateMetadata.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ncdc/sigedu/svn/!svn/ver/9/trunk/phpORM/generateMetadata.php
+END
+ORMException.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ncdc/sigedu/svn/!svn/ver/9/trunk/phpORM/ORMException.php
+END
+ORMMetaData.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ncdc/sigedu/svn/!svn/ver/9/trunk/phpORM/ORMMetaData.php
+END
+phpORM.kpf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ncdc/sigedu/svn/!svn/ver/3/trunk/phpORM/phpORM.kpf
+END
+test.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ncdc/sigedu/svn/!svn/ver/9/trunk/phpORM/test.php
+END
+ORMCondition.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ncdc/sigedu/svn/!svn/ver/3/trunk/phpORM/ORMCondition.php
+END
+news
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ncdc/sigedu/svn/!svn/ver/4/trunk/phpORM/news
+END
+ORMBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ncdc/sigedu/svn/!svn/ver/4/trunk/phpORM/ORMBase.php
+END
+ORMGenerate.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ncdc/sigedu/svn/!svn/ver/9/trunk/phpORM/ORMGenerate.php
+END

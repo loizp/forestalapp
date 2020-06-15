@@ -1,0 +1,100 @@
+.contenidoprinc {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:14px;
+    color:#036;
+    margin:20px;;
+    width: 920px;
+    line-height: 20px;
+    text-align:justify;
+}
+
+.mensaje1 {
+    margin:2px;
+    padding:5px;
+    border: 1px solid #fad42e;
+    background-color: #fbec88;
+    color: #363636;
+    height: 15px;
+    /*width: 53%;*/
+}
+.mensaje1izq {
+    float: left;
+    text-align: left;
+    width: 20%;
+}
+.mensaje1cent {
+    float: left;
+    text-align: center;
+    width: 59%;
+    font-size: 14px;
+    color: #325E9D;
+}
+.mensaje1der {
+    float: left;
+    text-align: right;
+    width: 20%;
+}
+
+.clear{
+	clear:both;
+}
+
+#mainconsulta{
+	width:800px;
+	margin:0 auto;
+}
+
+.containerconsulta, .titles{
+	color:white;
+	margin-top:5px;
+        margin-left: 4%;
+	width:90%;
+	overflow:hidden;
+	
+	background:url(/images/bg_dark.png) #28313b;
+	padding:8px 8px 4px;
+	
+	-moz-border-radius:8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius:8px;
+}
+.titles{
+	width:100px;
+	padding:5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+}
+
+.listcateg{
+	width:360px;
+	height:110px;
+	background:url(/images/product_bg.png) repeat-x;
+	padding-top:10px;
+	float:left;
+	
+	-moz-border-radius:8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius:8px;
+}
+
+.listcateg .pic{
+	float:left;
+	width:90px;
+	height:90px;
+	padding:0 10px 5px;
+	margin-top:-15px;
+}
+
+.listcateg .link a{
+	font-size:11px;
+	padding:4px 0;
+        color: orange;
+        font-style: italic;
+}
+
+.title{
+	font-size:16px;
+	font-weight:bold;
+}

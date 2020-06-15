@@ -1,0 +1,110 @@
+<?php /* Smarty version 3.0rc1, created on 2012-01-18 20:26:23
+         compiled from "./templates/expediente/sarch.html" */ ?>
+<?php /*%%SmartyHeaderCode:17888936554f17713fba7628-90599432%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '4542b96f6345d7580f4e0883d74d778b701e05f4' => 
+    array (
+      0 => './templates/expediente/sarch.html',
+      1 => 1325256997,
+    ),
+  ),
+  'nocache_hash' => '17888936554f17713fba7628-90599432',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
+<style>
+    .modarch {
+        margin: 5px;
+        padding: 20px;
+        float: left;
+        text-align: left;
+        width: 42%;
+    }
+
+    #arbolreq, #frm_carp, #frm_sarch, #det_arch{
+        border-style: dashed;
+        border-color: green;
+        border-width: 1px;
+    }
+        
+    #arbolreq ul {
+        background: none;
+    }
+
+    .modarch a img { border: none;}
+    .modarch * { margin: 0; padding: 0;}
+    
+    #frm_carp, #det_arch {
+        padding-bottom: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top:  10px;
+        margin-bottom: 20px;
+    }
+    
+    #frm_sarch {
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+    }
+
+    .dfarch {
+        margin: 10px auto;
+        padding: 5px;
+    }
+</style>
+
+<div id="frmarch_expediente" title="Subir Archivo a Expediente" class="formulario">
+
+    <script type="text/javascript" src="/js/modulos/sarchexp.js"></script>      
+
+    <div>
+        <div class="modarch">
+            <h4>Explorador de Archivos.</h4>
+        <div id="arbolreq">
+
+        </div>
+        </div>
+        <div class="modarch">
+            <h4>Editar Carpetas.</h4>
+            <div id="frm_carp">
+                
+                <label for="carpreq">Nombre Carpeta :</label>
+                <input type="text" name="carpreq" id="carpreq" class="text ui-widget-content" />
+                <br /><br /><center><button id="nuevo_carpreq">Nuevo</button><button id="mod_carpreq">Modificar</button><button id="borra_carpreq">Eliminar</button></center>
+            </div>
+            <h4>Registrar Archivos.</h4>
+            <div id="frm_sarch">
+                
+                <form action="/index.php/archivo/guardar" method="post" name="frm_archivo">
+                    <div class="dfarch">
+                        <label for="ndoc">Numero Doc. :</label>
+                        <input type="text" name="ndoc" id="ndoc" class="text ui-widget-content ui-corner-all" />
+                    </div><div class="dfarch">
+                        <label for="estadoarch">Publico :</label>
+                        <input name="estadoarch" id="estadoarch" type="checkbox" value="1" />
+                    </div><div class="dfarch">
+                        <label for="sarchi">Archivo :</label>
+                        <input type="file" name="sarchi" id="sarchi" class="text ui-widget-content ui-corner-all"/>
+                    </div>
+                    <center><input value="Subir" id="upload_button" type="button" /><input value="Modificar" id="modarch_button" type="button" /><input value="Eliminar" id="borraarch_button" type="button" /></center>
+                    <input type="hidden" id="idexparch" value="-1" />
+                    <input type="hidden" id="idreqarch" value="-1" />
+                    <input type="hidden" id="idreqnuevo" value="-1" />
+                    <input type="hidden" id="idarchi" value="-1" />
+                    <input type="hidden" id="depend" value="0" />
+                    <input type="hidden" id="sub" value="0" />
+                </form>
+            </div>
+            <h4>Detalle de Archivos.</h4>
+            <div id="det_arch">
+                
+            </div>
+        </div>
+    </div>
+    <p class="cargaarch_expediente"><img alt="" src="/images/ajax-loader.gif">Procesando...</p>
+
+</div>

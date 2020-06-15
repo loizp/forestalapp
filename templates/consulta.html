@@ -1,0 +1,38 @@
+<style>
+    #reportegeneral{
+        margin: 30px;
+        padding: 0;
+    }
+    #reportegeneral *{
+        font-size: 11px;
+    }
+    
+    #reportegeneral * ul li{
+        padding: 0 20px;
+        text-align: left;
+    }
+    #cabereport {
+        margin: 5px;
+    }
+    #cabereport div{
+        float: left;
+        text-align: left;
+        padding: 5px 40px;
+    }
+    #cabereport a{
+        color: green;
+        font-weight: bold;
+    }
+</style>
+<script type="text/javascript" src="/js/reportini.js"></script>
+<div id="consulta" class="cuerpo ui-widget-content">
+    <div id="cabereport">
+        <div><a href="/">||Home||::</a></div>
+        <div><h3>Reporte de categoria : {$tcategoria}</h3></div>
+    </div>
+    <div id="reportegeneral">
+        <div id="gridinicio">
+            {include file=$pgreporte}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<script type="text/javascript" src="/js/modulos/expediente.js"></script>
+<script type="text/javascript">{$grillaexpediente}</script>
+
+<table id="lsexpediente"></table>
+<div id="pgexpediente"></div>
+
+
+<button id="nuevo_expediente">Nuevo</button>
+<button id="modificar_expediente">Modificar</button>
+<button id="subir_mapexpediente">Subir Mapa</button>
+<button id="anular_expediente">Cambiar Estado</button>
+<button id="adet_expediente">Registro Detalle</button>
+<button id="btnarch_expediente">Subir Archivo</button>
+
+<div class="espere_expediente" style="color: red;font-size: 12px;font-weight: bold">
+    Procesando... <img alt="" src="/images/ajax-loader.gif" />
+</div>
+{include file=$form}
+{include file=$fasig}
+{include file="expediente/sarch.html"}
+{include file="expediente/smap.html"}

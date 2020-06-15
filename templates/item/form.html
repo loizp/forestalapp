@@ -1,0 +1,19 @@
+<div id="frm_item" title="Administrar items" class="formulario">
+
+	<p class="validar_item">Ingrese los datos.</p>
+        <br />
+
+        <form action="/index.php/item/guardar" method="post" name="frm_item">
+
+		<label for="nombre">Nombre :</label>
+		<input type="text" name="nombre" id="nombre" class="text ui-widget-content ui-corner-all" />
+                <br /><br />
+                <label for="descripcion">Descripcion :</label>
+		<input type="text" name="descripcion" id="descripcion" class="text ui-widget-content ui-corner-all" />
+                
+                <input type="hidden" name="iditem" id="iditem" value ="-1"/>
+                
+	</form>
+        <p class="cargando_item"><img alt="" src="/images/ajax-loader.gif">Procesando...</p>
+        
+</div>

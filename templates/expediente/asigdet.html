@@ -1,0 +1,41 @@
+<style>
+    .archidet{
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 43%;
+    }
+    
+    #arbolarch * a{
+        color: #2694e8;
+    }
+</style>
+<div id="frm_adet" title="Administrar Detalle Expediente" class="formulario">
+<script type="text/javascript" src="/js/modulos/adetexp.js"></script>
+    <p class="validar_adet">Ingrese los datos.</p>
+
+    <form action="/index.php/expediente/adet" method="post" name="frm_adet">
+        <div class="dfexp">
+            <label for="listareq">Requisito :</label>
+            <select name="listareq" id="listareq"></select>
+        </div><div class="dfexp">
+            <label for="listaitem">Items :</label>
+            <select name="listaitem" id="listaitem"></select>
+        </div>
+        <div class="dfexp">
+            <label for="descripciondet">Descripcion :</label>
+            <input type="text" name="descripciondet" id="descripciondet" class="text ui-widget-content ui-corner-all" />
+        </div>
+        <div class="dfexp">
+            <fieldset class="archidet"><legend>Lista de Archivos :</legend><div id="arbolarch" ></div></fieldset>
+            <fieldset class="archidet"><legend>Datos de Archivo :</legend><a href="javascript:void(0)" id="larch0" onclick="selecarchdet(0,0);">Quitar</a><div id="detselarch" ></div></fieldset>
+        </div>
+        <input type="hidden" name="idexpedi" id="idexpedi" />
+        <input type="hidden" name="idlistareq" id="idlistareq" />
+        <input type="hidden" name="idar" id="idar" value="0" />
+        <input type="hidden" name="idlistaitem" id="idlistaitem" />
+
+    </form>
+    <p class="cargando_adet"><img alt="" src="/images/ajax-loader.gif">Procesando...</p>
+
+</div>

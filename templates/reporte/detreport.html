@@ -1,0 +1,55 @@
+<style>
+    #datareporte {
+        width: 100%;
+        height: 82%;
+        font-size: 11px;
+    }
+    .panelexpe{
+        float: left;
+        margin: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        width: 43%;
+        border-style: dashed; 
+        border-color: green; 
+        border-width: 1px;
+    }
+    #arbolex {
+        overflow: auto;
+        width: 88%;
+        height: 82%;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    #arbolex ul {
+        background: none;
+    }
+</style>
+<script type="text/javascript" src="/js/modulos/reportdet.js"></script>   
+<div style="width: 100%; height: 15px;"><a style="color:blue; float: right; position: static;" href='javascript:void(0)' onclick='dashreport("/index.php/expediente/report","{$obj->idcategoria}");'><b>-:|Volver</b></a></div>
+<div id="datareporte">
+    <div class="panelexpe">
+        <div id="dataex">
+            <table>
+                <tr><td>Codigo :</td><td style="color:dodgerblue;">{$obj->codigo}</td></tr>
+                <tr><td>Titular :</td><td>{$obj->titular}</td></tr>
+                <tr><td>Ubicacion :</td><td>{$obj->ubicacion}</td></tr>
+                <tr><td>Fecha :</td><td>{$obj->fecha}</td></tr>
+                <tr><td>Observacion :</td><td>{$obj->observacion}</td></tr>
+                <tr><td>Tipo :</td><td>{$obj->Tipoexp->descripcion}</td></tr>
+                <tr><td>Categoria :</td><td>{$obj->Categoria->titulo}</td></tr>
+            </table>
+        </div>
+        <div id="mapaex">{if $obj->timapa|count_characters gt 2} {$mapae} {/if}</div>
+    </div>
+    <div class="panelexpe">
+        <div>
+            <a href="javascript:void(0)" style="margin-right: 10px; color:red; float: right; position: static;" onclick="reloadarb('{$obj->idexpediente}');"><span class="ui-icon ui-button ui-icon-gear" title="Recargar Lista de Archivos"></span></a>
+            <h3>Seleccione para ver detalles: </h3>
+        </div>
+        <div id="arbolex"></div>
+    </div>
+</div>
+{include file="reporte/listdetalle.html"}

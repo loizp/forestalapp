@@ -1,0 +1,25 @@
+<div id="frm_usermod" title="Modificar Usuario" class="formulario">
+
+    <p class="validar_usermod">Ingrese los datos.</p>
+    <br />
+
+    <form action="/index.php/usuario/guardar" method="post" name="frm_usermod">
+
+        <label for="nicku">Titulo :</label>
+        <input type="text" name="nicku" value="{$login.nick}" id="nicku" class="text ui-widget-content ui-corner-all" />
+        <br /><br />
+        <label for="loginu">Usuario :</label>
+        <input type="text" name="loginu" id="loginu" value="{$login.login}" class="text ui-widget-content ui-corner-all" />
+        <br /><br />
+        <label for="pass1u">Clave :</label>
+        <input type="password" name="pass1u" value="" id="pass1u" class="text ui-widget-content ui-corner-all" />
+        <br /><br />
+        <label for="pass2u">Repetir Clave :</label>
+        <input type="password" name="pass2u" value="" id="pass2u" class="text ui-widget-content ui-corner-all" />
+
+        <input type="hidden" name="iduser" id="iduser" value ="{$login.idusuario}"/>
+
+    </form>
+    <p class="cargando_usermod"><img alt="" src="/images/ajax-loader.gif" />Procesando...</p>
+
+</div>

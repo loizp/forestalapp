@@ -1,0 +1,92 @@
+div.mitad {
+   width: 49%;
+   float: left;
+   margin: 10px 0;
+}
+div#logder {
+   border-left: black solid 2px;
+   text-align: left;
+}
+div#logder h3 {
+   font-size:14px;
+   font-weight:bold;
+   margin-bottom:8px;
+   margin: 10px;
+}
+div#logder p{
+   font-size:11px;
+   color:#666666;
+   margin-bottom:20px;
+   border-bottom:solid 1px green;
+   padding-bottom:10px;
+   margin: 10px;
+   font-style: italic;
+}
+div#formlogin{
+   width: 320px;
+   margin: 0 auto;
+   padding: 10px 0;
+}
+div#formlogin label{
+   width: 110px;
+   display: block;
+   font-weight:bold;
+   text-align:right;
+   float:left;
+   padding:3px 3px;
+}
+div#formlogin .loguser{
+   float:left;
+   font-size:12px;
+   padding:2px 2px;
+   border:solid 1.5px #197222;
+   width:150px;
+   margin:2px 0 20px 10px;
+}
+div#formlogin .loguser, div#expand{
+   -ms-border-radius: 3px; /*IE*/
+   -moz-border-radius: 3px; /*FIREFOX*/
+   -webkit-border-radius: 3px; /*WEBKIT*/
+   -khtml-border-radius: 3px; /*KONQUEROR*/
+}
+div#formlogin .boton{
+   margin-left: 100px;
+   margin-bottom: 3px;
+   width:125px;
+   height:30px;
+   text-align:center;
+   font-size:11px;
+   font-weight:bold;
+}
+div#expand{
+   font-size:10px;
+   width: 300px;
+   height: 20px;
+   padding:2px 10px;
+   border:solid 1px #b0bf92;
+   margin:10px auto;
+   background-color: #c4e1a7;
+}
+div#expand div#enlase div{
+   width: 50%;
+   float: left;
+   text-align: right;
+}
+div#expand div#enlase a{
+   color: green;
+   font-style: italic;
+}
+div#expand div#enlase div#isq{
+   text-align: left;
+}
+div#expand div#enlase div#der{
+   text-align: right;
+}
+#mensaje{
+   margin:0;
+   padding:2px;
+   font-style: italic;
+   color: red;
+   font-size:0.9em;
+   text-align: center;
+}

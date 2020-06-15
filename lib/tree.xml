@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+    <page>1</page>
+    <total>1</total>
+    <records>1</records>
+    <row>
+        <cell>1</cell>
+        <cell>Sistema</cell>
+        <cell/>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>8</cell>
+        <cell>false</cell>
+        <cell>false</cell>
+    </row>
+    <row>
+        <cell>2</cell>
+        <cell>Registrar Categoria</cell>
+        <cell>/index.php/categoria</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>true</cell>
+        <cell>true</cell>
+    </row>
+    <row>
+        <cell>3</cell>
+        <cell>Registrar Requisito</cell>
+        <cell>/index.php/requisito</cell>
+        <cell>1</cell>
+        <cell>4</cell>
+        <cell>5</cell>
+        <cell>true</cell>
+        <cell>true</cell>
+    </row>
+    <row>
+        <cell>4</cell>
+        <cell>Tipos de Expediente</cell>
+        <cell>/index.php/tipoexp</cell>
+        <cell>1</cell>
+        <cell>6</cell>
+        <cell>7</cell>
+        <cell>true</cell>
+        <cell>true</cell>
+    </row>
+    <row>
+        <cell>5</cell>
+        <cell>Documentos</cell>
+        <cell/>
+        <cell>0</cell>
+        <cell>9</cell>
+        <cell>14</cell>
+        <cell>false</cell>
+        <cell>false</cell>
+    </row>
+    <row>
+        <cell>6</cell>
+        <cell>Expedientes</cell>
+        <cell>/index.php/expediente</cell>
+        <cell>1</cell>
+        <cell>10</cell>
+        <cell>11</cell>
+        <cell>true</cell>
+        <cell>true</cell>
+    </row>
+    <row>
+        <cell>7</cell>
+        <cell>Archivos</cell>
+        <cell>/index.php/expediente/vmap?idexpediente=1</cell>
+        <cell>1</cell>
+        <cell>12</cell>
+        <cell>13</cell>
+        <cell>true</cell>
+        <cell>true</cell>
+    </row>
+</rows>

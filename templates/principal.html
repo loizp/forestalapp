@@ -1,0 +1,36 @@
+<link type="text/css" href="/css/principal.css" rel="stylesheet" />
+<script type="text/javascript" src="/js/pngFix/jquery.pngFix.js"></script>
+<script type="text/javascript" src="/js/mopSlider/mopSlider-2.4.js"></script>
+<script type="text/javascript" src="/js/principal.js"></script>
+
+<div id="pgprincipal" class="cuerpo">
+    <div class="mensaje1">
+        <div class="mensaje1izq"></div>
+        <div class="mensaje1cent"><h3>¿QUÉ ES?</h3></div>
+        <div class="mensaje1der"><a href="/index.php/intranet">Intranet</a></div>
+    </div>
+    <div class="contenidoprinc">
+        Es un sistema de información que permite registrar y consultar información acerca de Autorizaciones, Concesiones Forestales Maderables y No Maderables, Permisos, Intervenciones, Otorgamientos entre otros, de la Dirección Ejecutiva de Administración y Conservación de los Recursos Naturales, del Gobierno Regional San Martín.
+    </div>
+    <div class="contenidoprinc">
+        Información disponible sobre la gestión y administración de los bosques, como parte de las competencias transferidas.
+    </div>
+    <div class="mainconsulta">
+        <div class="titles">Consultar :</div>
+        <div class="containerconsulta">
+            <div id="sliderconsulta">
+                {foreach from=$lcateg item="c"}
+                <div class="listcateg">
+                    <div class="pic"><img src="/images/4.png" width="80" height="80" alt="{$c->titulo}" /></div>
+                    <div class="title">{$c->titulo}</div>
+                    <div class="description"><p>{$c->descripcion}</p></div>
+                    <div class="link"><a href="/index.php/expediente/report?idcategoria={$c->idcategoria}">Ver Expedientes</a></div>
+                    <div class="clear"></div>
+                </div>
+                {/foreach}
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+        
+</div>

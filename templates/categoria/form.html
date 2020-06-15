@@ -1,0 +1,19 @@
+<div id="frm_categoria" title="Administrar categorias" class="formulario">
+
+    <p class="validar_categoria">Ingrese los datos.</p>
+    <br />
+
+    <form action="/index.php/categoria/guardar" method="post" name="frm_categoria">
+
+        <label for="titulo">Titulo :</label>
+        <input type="text" name="titulo" id="titulo" class="text ui-widget-content ui-corner-all" />
+        <br /><br />
+        <label for="descripcioncat">Descripcion :</label>
+        <input type="text" name="descripcioncat" id="descripcioncat" class="text ui-widget-content ui-corner-all" />
+
+        <input type="hidden" name="idcategoria" id="idcategoria" value ="-1"/>
+
+    </form>
+    <p class="cargando_categoria"><img alt="" src="/images/ajax-loader.gif" />Procesando...</p>
+
+</div>

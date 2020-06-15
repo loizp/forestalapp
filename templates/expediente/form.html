@@ -1,0 +1,44 @@
+<div id="frm_expediente" title="Administrar Expediente" class="formulario">
+
+    <p class="validar_expediente">Ingrese los datos.</p>
+
+    <form action="/index.php/expediente/guardar" method="post" name="frm_expediente">
+        <div class="dfexp">
+            <label for="codigo">Codigo :</label>
+            <input type="text" name="codigo" id="codigo" class="text ui-widget-content ui-corner-all" />
+        </div><div class="dfexp">
+            <label for="titular">Titular :</label>
+            <input type="text" name="titular" id="titular" class="text ui-widget-content ui-corner-all" />
+        </div><div class="dfexp">
+            <label for="ubicacion">Ubicacion :</label>
+            <input type="text" name="ubicacion" id="ubicacion" class="text ui-widget-content ui-corner-all" />
+        </div><div class="dfexp">
+            <label for="observacion">Observacion :</label>
+            <input type="text" name="observacion" id="observacion" class="text ui-widget-content ui-corner-all" />
+        </div><div class="dfexp">
+            <label for="fecha">Fecha :</label>
+            <input type="text" name="fecha" id="fecha" class="text ui-widget-content ui-corner-all" />
+        </div><div class="dfexp">
+            <label for="estado">Activo :</label>
+            <input name="estado" id="estado" type="checkbox" value="1" />
+        </div><div class="dfexp">
+            <label for="listatiexp">Tipo Expediente :</label>
+            <select name="listatiexp" id="listatiexp">
+                {foreach from=$listtipex item="lt"}
+                <option value="{$lt->idtipoexp}" >{$lt->descripcion}</option>
+                {/foreach}
+            </select>
+        </div><div class="dfexp">
+            <label for="listacateg">Categoria :</label>
+            <select name="listacateg" id="listacateg">
+                {foreach from=$listcateg item="lc"}
+                <option value="{$lc->idcategoria}" >{$lc->titulo}</option>
+                {/foreach}
+            </select>
+        </div>
+        <input type="hidden" name="idexpediente" id="idexpediente" value ="-1"/>
+
+    </form>
+    <p class="cargando_expediente"><img alt="" src="/images/ajax-loader.gif">Procesando...</p>
+
+</div>

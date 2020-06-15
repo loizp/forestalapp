@@ -1,0 +1,16 @@
+<div id="frm_tipoexp" title="Administrar los tipos de Expedientes" class="formulario">
+
+	<p class="validar_tipoexp">Ingrese los datos.</p>
+        <br />
+
+        <form action="/index.php/tipoexp/guardar" method="post" name="frm_tipoexp">
+
+		<label for="descripcion">Descripcion :</label>
+		<input type="text" name="descripcion" id="descripcion" class="text ui-widget-content ui-corner-all" />
+                
+                <input type="hidden" name="idtipoexp" id="idtipoexp" value ="-1"/>
+                
+	</form>
+        <p class="cargando_tipoexp"><img alt="" src="/images/ajax-loader.gif">Procesando...</p>
+        
+</div>

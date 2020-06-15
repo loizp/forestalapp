@@ -1,0 +1,17 @@
+<div id="frm_mapexpediente" title="Subir Mapa de Expediente" class="formulario">
+
+    <p class="validar_mapexpediente">Subir Imagen menor a 2MB</p>
+
+    <form action="/index.php/expediente/savemapa" enctype="multipart/form-data" method="post" name="frm_mapexpediente">
+        <div class="dfexp">
+            <label for="mapa">Mapa :</label>
+            <input type="file" name="mapa" id="mapa" class="text ui-widget-content ui-corner-all" />
+        </div>
+        <input type="hidden" name="mapaid" id="mapaid" />
+
+    </form>
+    
+    <p class="cargando_mapexpediente"><img alt="" src="/images/ajax-loader.gif">Procesando...</p>
+    
+    <div id="imgmapa"></div>
+</div>

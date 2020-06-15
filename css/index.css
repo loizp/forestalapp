@@ -1,0 +1,51 @@
+* {
+   margin : 0;
+   padding : 0;
+}
+body {
+   cursor : default;
+   font-size : 11px;
+   line-height : 16px;
+   text-align : center;
+   background-color : #fff;
+   font-family : Tahoma, sans-serif;
+   background-position : 50% 0;
+   background-repeat : no-repeat;
+}
+a:link, a:visited {
+   text-decoration : none;
+}
+a img {
+   border : 0;
+}
+.contenedor {
+    width : 980px;
+    margin : 5px auto;
+}
+div#header, div.cuerpo, div#pie{
+   -ms-border-radius: 10px; /*IE*/
+   -moz-border-radius: 10px; /*FIREFOX*/
+   -webkit-border-radius: 10px; /*WEBKIT*/
+   -khtml-border-radius: 10px; /*KONQUEROR*/
+   -ms-border-radius: 10px; /*IE*/
+}
+div#header{
+   margin : 5px 0 0;
+}
+div.cuerpo{
+   width : 980px;
+   margin : 5px auto;
+   height : 465px;
+   border: black dashed 1px;
+}
+div#pie{
+   color : #a4a4a4;
+   width : 980px;
+   margin : 0 auto;
+   height : 25px;
+   background : #000;
+}
+div#pie p{
+   padding: 2px;
+   font-style: italic;
+}
